@@ -4,9 +4,13 @@ from pathlib import Path
 from dataclasses import dataclass
 from typing import Optional
 
+import os
+os.environ["PATH"] += os.pathsep + "/usr/bin"
+
 import discord
 from discord.ext import commands
 from dotenv import load_dotenv
+
 
 load_dotenv()
 
